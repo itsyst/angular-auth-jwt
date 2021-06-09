@@ -1,0 +1,12 @@
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <li><a routerLink="/" class="navbar-brand">Home</a></li>
+    <li *ngIf="authService.isLoggedIn()"><a routerLink="/admin/products" class="nav-item text-white">Products</a>
+    </li>
+    <li *ngIf="!authService.isLoggedIn()"><a routerLink="/login" class="nav-item text-white">Login</a></li>
+    <li *ngIf="authService.isLoggedIn()"><a routerLink="/" (click)="authService.logout()"
+        class="nav-item text-white">Logout</a>
+    </li>
+  </div>
+</nav>
+<router-outlet></router-outlet>
