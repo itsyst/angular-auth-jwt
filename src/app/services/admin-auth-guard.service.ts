@@ -1,8 +1,8 @@
-import { AuthGuard } from './auth-guard.service';
+import { AuthGuardService } from './auth-guard.service';
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class AdminAuthGuard extends AuthGuard {
+export class AdminAuthGuardService extends AuthGuardService {
 
   canActivate() {
     let isAuthenticated = super.canActivate();
