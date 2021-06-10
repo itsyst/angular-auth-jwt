@@ -3,7 +3,7 @@ import { MockBackend, MockConnection } from '@angular/http/testing';
 
 export function fakeBackendFactory(backend: MockBackend, options: BaseRequestOptions) {
 
-    let token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IktoYWxlZCBIYW16aSIsImFkbWluIjp0cnVlfQ.zP3HDCfpVcD3k2Kvp8ylXgUu-PAxv6nR9uqiog46Y_A';
+    let token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IktoYWxlZCBIYW16aSIsImFkbWluIjp0cnVlfQ.kLJ-qtk7uRENYOdUbTnkZePXeho3rnGoUoxzjF8maco';
 
     backend.connections.subscribe((connection: MockConnection) => {
         // Fake implementation of /api/authenticate
@@ -56,7 +56,7 @@ export function fakeBackendFactory(backend: MockBackend, options: BaseRequestOpt
             }
         }
     });
-  
+
     return new Http(backend, options);
 }
 
