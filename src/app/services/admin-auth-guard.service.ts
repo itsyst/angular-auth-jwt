@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 export class AdminAuthGuardService extends AuthGuardService {
 
   canActivate() {
-    let isAuthenticated = super.canActivate();
+    let isAuthenticated = super.canActivate;
     if (!isAuthenticated)
       return false;
 

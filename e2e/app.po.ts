@@ -1,6 +1,6 @@
 import { browser, by, element } from 'protractor';
 
-export class AuthDemoPage {
+export class AngularJwtAuthPage {
   navigateTo() {
     return browser.get('/');
   }

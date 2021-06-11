@@ -1,10 +1,10 @@
-import { AuthDemoPage } from './app.po';
+import { AngularJwtAuthPage } from './app.po';
 
 describe('auth-demo App', () => {
-  let page: AuthDemoPage;
+  let page: AngularJwtAuthPage;
 
   beforeEach(() => {
-    page = new AuthDemoPage();
+    page = new AngularJwtAuthPage();
   });
 
   it('should display welcome message', done => {
