@@ -6,7 +6,7 @@ import { User } from 'app/types/user';
 import { Router } from '@angular/router';
 
 @Injectable()
-export class AuthService {
+export class Auth {
   currentUser: User;
 
   constructor(private router: Router, private http: Http) {
